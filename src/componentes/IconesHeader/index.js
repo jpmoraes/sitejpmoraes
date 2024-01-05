@@ -1,6 +1,23 @@
 import git from "../../imagens/giticone.png";
 import lin from "../../imagens/in.png";
-import "./style.css";
+import styled from "styled-components";
+
+const _Icone = styled.li`
+  list-style: none;
+  margin-right: 25px;
+  width: 25px;
+`;
+const Icones = styled.ul`
+  display: flex;
+  align-items: center;
+`;
+
+const Img = styled.img`
+  max-width: 50px;
+  max-height: 50px;
+  width: auto;
+  height: auto;
+`;
 
 const icones = [
   { icon: git, link: "https://github.com/jpmoraes" },
@@ -12,15 +29,15 @@ const icones = [
 
 function IconesHeader() {
   return (
-    <ul className="icones">
+    <Icones>
       {icones.map((icone) => (
         <a href={icone.link}>
-          <li className="icone">
-            <img src={icone.icon}></img>
-          </li>
+          <_Icone>
+            <Img src={icone.icon} alt="icones"></Img>
+          </_Icone>
         </a>
       ))}
-    </ul>
+    </Icones>
   );
 }
 
