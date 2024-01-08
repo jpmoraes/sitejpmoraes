@@ -2,28 +2,16 @@ import Input from "../Input";
 import styled from "styled-components";
 import { useState } from "react";
 import { projetos } from "./dadosPesquisado";
+import { Titulo } from "../Props";
+import { Subtitulo } from "../Props";
 
 const PesquisaContainer = styled.section`
-  background-image: linear-gradient(90deg, #002f52 35%, #326589 165%);
   color: #fff;
   text-align: center;
   padding: 85px 0;
   height: 270px;
   width: 100%;
   height: 30%;
-`;
-
-const Titulo = styled.h2`
-  color: #fff;
-  font-size: 36px;
-  text-align: center;
-  width: 100%;
-`;
-
-const Subtitulo = styled.h3`
-  font-size: 16px;
-  font-weight: 500;
-  margin-bottom: 40px;
 `;
 
 const Resultado = styled.div`
@@ -39,14 +27,15 @@ const Resultado = styled.div`
   img {
     width: 100px;
   }
-  &:hover {
-    border: 1px solid white;
-  }
 `;
 
 const liResultado = styled.li`
   display: flex;
   justify-content: center;
+
+  &:hover {
+    border: 1px solid white;
+  }
 `;
 
 const luResultado = styled.ul`
@@ -59,7 +48,7 @@ function Pesquisa() {
 
   return (
     <PesquisaContainer>
-      <Titulo>Aqui as ideias ganham vida</Titulo>
+      <Titulo cor="#A1ACE4">Aqui as ideias ganham vida</Titulo>
       <Subtitulo>Pesquise projetos do seu interesse</Subtitulo>
       <Input
         placeholder="Deixe sua mensagem"

@@ -15,7 +15,7 @@ const Opcao = styled.li`
 
   &:hover {
     list-style: url("../../imagens/seletor.png");
-    color: #134298;
+    color: #BD8439;
     font-size: 21px;
   }
 `;
