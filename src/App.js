@@ -1,15 +1,16 @@
 import Logo from "./componentes/Logo";
 import Header from "./componentes/Header";
-import Pesquisa from "./componentes/Pesquisa";
+import Producao from "./componentes/Section/Producao";
 import styled from "styled-components";
 import SouEu from "./componentes/Section/SouEu";
 import Interesse from "./componentes/Section/Interesses";
 import Contribua from "./componentes/Section/Contribua";
 import Contatos from "./componentes/Section/Contatos";
+import Footer from "./componentes/Footer";
 
 const AppContainer = styled.div`
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-color: #3d3d3d;
 `;
 
@@ -17,11 +18,12 @@ function App() {
   return (
     <AppContainer>
       <Header />
-      <SouEu/>
-      <Interesse/>
-      <Pesquisa />
-      <Contribua/>
-      <Contatos/>
+      <SouEu />
+      <Interesse />
+      <Producao />
+      <Contribua />
+      <Contatos />
+      <Footer />
     </AppContainer>
   );
 }

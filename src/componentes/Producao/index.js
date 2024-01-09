@@ -1,9 +1,9 @@
-import Input from "../Input";
+import Input from "../../Input";
 import styled from "styled-components";
 import { useState } from "react";
 import { projetos } from "./dadosPesquisado";
-import { Titulo } from "../Props";
-import { Subtitulo } from "../Props";
+import { Titulo } from "../../Props";
+import { Subtitulo } from "../../Props";
 
 const PesquisaContainer = styled.section`
   color: #fff;
@@ -48,7 +48,7 @@ function Pesquisa() {
 
   return (
     <PesquisaContainer>
-      <Titulo cor="#A1ACE4">Aqui as ideias ganham vida</Titulo>
+      <Titulo cor="#A1ACE4">Produções</Titulo>
       <Subtitulo>Pesquise projetos do seu interesse</Subtitulo>
       <Input
         placeholder="Deixe sua mensagem"

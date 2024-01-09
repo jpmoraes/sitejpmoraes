@@ -1,4 +1,4 @@
-import projeto from "../../imagens/livro.png";
+import projeto from "../../../imagens/livro.png";
 
 export const projetos = [
   { id: 1, nome: "Robótica Educacional", src: projeto },

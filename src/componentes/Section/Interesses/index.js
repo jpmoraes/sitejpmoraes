@@ -1,4 +1,4 @@
-import { sectionContainer } from "../../Props";
+import { SectionContainer } from "../../Props";
 import { Titulo } from "../../Props";
 import styled from "styled-components";
 import CardRecomenda from "./Card";
@@ -12,33 +12,39 @@ const Resultado = styled.div`
   height: 200px;
 `;
 
-const liResultado = styled.li`
+const LiResultado = styled.li`
   display: flex;
   justify-content: center;
+  margin-right: 20px;
 `;
 
-const luResultado = styled.ul`
+const UlResultado = styled.ul`
   display: flex;
   justify-content: center;
 `;
 
 function Interesse() {
   return (
-    <sectionContainer>
+    <SectionContainer>
       <Titulo cor="#C2B990">Interesse</Titulo>
-      <luResultado>
-        <liResultado>
+      <UlResultado>
+        <LiResultado>
           <CardRecomenda
             titulo="Robótica"
             subtitulo="Habilidades do Século XXI"
             descricao="Construindo uma aplicação com a plataforma Google"
-          ></CardRecomenda>
-        </liResultado>
-        <liResultado>
-          <CardRecomenda></CardRecomenda>
-        </liResultado>
-      </luResultado>
-    </sectionContainer>
+          />
+        </LiResultado>
+
+        <LiResultado>
+          <CardRecomenda
+            titulo="Tecnologia Digitais Educacionais"
+            subtitulo="Uso de ferramentas digitais nas escolas"
+            descricao="Construindo uma aplicação com a plataforma Google"
+          />
+        </LiResultado>
+      </UlResultado>
+    </SectionContainer>
   );
 }
 

@@ -1,11 +1,13 @@
-import { sectionContainer } from "../../Props";
+import { SectionContainer } from "../../Props";
 import { Titulo } from "../../Props";
+import { Subtitulo } from "../../Props";
 
 function Contribua() {
   return (
-    <sectionContainer>
+    <SectionContainer>
       <Titulo cor="#E69E67">Contribua</Titulo>
-    </sectionContainer>
+      <Subtitulo>Aqui as ideias ganham vida</Subtitulo>
+    </SectionContainer>
   );
 }
 

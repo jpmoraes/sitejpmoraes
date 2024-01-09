@@ -1,11 +1,11 @@
-import { sectionContainer } from "../../Props";
+import { SectionContainer } from "../../Props";
 import { Titulo } from "../../Props";
 
 function Contatos() {
   return (
-    <sectionContainer>
+    <SectionContainer>
       <Titulo cor="#C2B990">Contatos</Titulo>
-    </sectionContainer>
+    </SectionContainer>
   );
 }
 
