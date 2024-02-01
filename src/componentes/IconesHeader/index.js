@@ -4,8 +4,8 @@ import styled from "styled-components";
 
 const _Icone = styled.li`
   list-style: none;
-  margin-right: 25px;
-  width: 25px;
+  margin-right: 35px;
+  width: 35px;
 `;
 const Icones = styled.ul`
   display: flex;
@@ -13,8 +13,8 @@ const Icones = styled.ul`
 `;
 
 const Img = styled.img`
-  max-width: 50px;
-  max-height: 50px;
+  max-width: 70px;
+  max-height: 70px;
   width: auto;
   height: auto;
 `;

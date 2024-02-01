@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import logo from "../../imagens/logo.svg";
+import logo from "../../imagens/jpmoraes.png";
 
 const LogoContainer = styled.div`
   display: flex;
@@ -17,10 +17,12 @@ const Logo_p = styled.p`
 function Logo() {
   return (
     <LogoContainer>
-      <Logo_img src={logo} alt="logo" className="logo-img"></Logo_img>
-      <Logo_p className="p-Logo">
-        <strong>JP</strong>Moraes
-      </Logo_p>
+      <Logo_img
+        src={logo}
+        alt="logo"
+        className="logo-img"
+        height="90%"
+      ></Logo_img>
     </LogoContainer>
   );
 }

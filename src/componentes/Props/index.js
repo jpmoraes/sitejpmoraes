@@ -13,7 +13,8 @@ export const SectionContainer = styled.section`
   padding: 85px 0;
   height: 100%;
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 2px;
+  background-color: #3d3d3d;
 `;
 
 export const Subtitulo = styled.h3`

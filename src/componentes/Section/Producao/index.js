@@ -12,6 +12,8 @@ const PesquisaContainer = styled.section`
   height: 270px;
   width: 100%;
   height: 30%;
+  background-color: #3d3d3d;
+  margin-bottom: 2px;
 `;
 
 const Resultado = styled.div`

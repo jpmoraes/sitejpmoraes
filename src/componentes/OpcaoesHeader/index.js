@@ -3,7 +3,7 @@ import styled from "styled-components";
 const Opcao = styled.li`
   list-style: none;
   min-width: 120px;
-  font-size: 20px;
+  font-size: 25px;
   font-family: "Times New Roman", Times, serif;
   display: center;
   align-items: center;
@@ -12,11 +12,12 @@ const Opcao = styled.li`
   padding: 0 20px;
   cursor: pointer;
   margin-right: 40px;
+  margin-top: 50px;
 
   &:hover {
     list-style: url("../../imagens/seletor.png");
-    color: #BD8439;
-    font-size: 21px;
+    color: #bd8439;
+    font-size: 26px;
   }
 `;
 
