@@ -1,5 +1,5 @@
-import git from "../../imagens/giticone.png";
-import lin from "../../imagens/in.png";
+import git from "../../../imagens/giticone.png";
+import lin from "../../../imagens/in.png";
 import styled from "styled-components";
 
 const _Icone = styled.li`

@@ -1,5 +1,5 @@
 import Logo from "../Logo";
-import IconesHeader from "../IconesHeader";
+import IconesHeader from "../Header/IconesHeader";
 import styled from "styled-components";
 
 const FooterContainer = styled.footer`
