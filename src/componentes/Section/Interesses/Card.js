@@ -1,9 +1,11 @@
+import React, { useState } from "react";
 import styled from "styled-components";
 import { Titulo } from "../../Props";
+import Modal from "./modal"; // Importe o componente Modal
 
 const Card = styled.div`
   align-items: center;
-  background-color: #fff;
+  background-color: #FFE8D1;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   display: flex;
@@ -16,7 +18,7 @@ const Card = styled.div`
 `;
 
 const Botao = styled.button`
-  background-color: #eb9b00;
+  background-color: #457D8F;
   color: #fff;
   padding: 10px 0px;
   font-size: 16px;
@@ -47,21 +49,43 @@ const ImgLivro = styled.img`
   width: 150px;
 `;
 
-function CardRecomenda({ titulo, subtitulo, descricao, img }) {
+function CardRecomenda({ titulo, subtitulo, descricao, img, descricaoModal }) {
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => {
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+  };
+
   return (
-    <Card>
-      <div>
-        <Titulo tamanhoFonte="16px" cor="#EB9B00" alinhamento="left">
-          {titulo}
-        </Titulo>
-        <Subtitulo>{subtitulo}</Subtitulo>
-        <Descricao>{descricao}</Descricao>
-      </div>
-      <div>
-        <ImgLivro src={img} />
-        <Botao>Saiba mais</Botao>
-      </div>
-    </Card>
+    <>
+      <Card>
+        <div>
+          <Titulo tamanhoFonte="16px" cor="#457D8F" alinhamento="left">
+            {titulo}
+          </Titulo>
+          <Subtitulo>{subtitulo}</Subtitulo>
+          <Descricao>{descricao}</Descricao>
+        </div>
+        <div>
+          <ImgLivro src={img} />
+          {/* Ao clicar no botão, chame a função openModal */}
+          <Botao onClick={openModal}>Saiba mais</Botao>
+        </div>
+      </Card>
+
+      {/* Renderize o Modal se estiver aberto */}
+      {modalOpen && (
+        <Modal
+          titulo={titulo}
+          descricao={descricaoModal}
+          onClose={closeModal}
+        />
+      )}
+    </>
   );
 }
 

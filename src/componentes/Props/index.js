@@ -14,7 +14,7 @@ export const SectionContainer = styled.section`
   height: 100%;
   width: 100%;
   margin-bottom: 2px;
-  background-color: #3d3d3d;
+  background-color: #7E7E7E;
   padding:0px;
 `;
 

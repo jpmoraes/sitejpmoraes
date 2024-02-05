@@ -5,6 +5,8 @@ import { projetos } from "./dadosPesquisado";
 import { Titulo } from "../../Props";
 import { Subtitulo } from "../../Props";
 
+
+
 const PesquisaContainer = styled.section`
   color: #fff;
   text-align: center;
@@ -12,7 +14,7 @@ const PesquisaContainer = styled.section`
   height: 270px;
   width: 100%;
   height: 30%;
-  background-color: #3d3d3d;
+  background-color: #2F373A;
   margin-bottom: 2px;
 `;
 
@@ -50,7 +52,7 @@ function Pesquisa() {
 
   return (
     <PesquisaContainer>
-      <Titulo cor="#A1ACE4">Produções</Titulo>
+      <Titulo cor="#fff">Produções</Titulo>
       <Subtitulo>Pesquise projetos do seu interesse</Subtitulo>
       <Input
         placeholder="Deixe sua mensagem"
