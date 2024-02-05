@@ -8,7 +8,7 @@ const Card = styled.div`
   border-radius: 10px;
   display: flex;
   margin: 0 auto;
-  max-width: 350px;
+  max-width: 450px;
   padding: 25px 20px;
   justify-content: space-around;
   width: 100%;

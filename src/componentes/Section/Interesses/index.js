@@ -9,42 +9,69 @@ const Resultado = styled.div`
   align-items: center;
   margin-bottom: 20px;
   cursor: pointer;
-  height: 200px;
+  height: auto;
+  padding: 50px;
 `;
 
 const LiResultado = styled.li`
   display: flex;
   justify-content: center;
-  margin-right: 20px;
+  text-align: center;
+  margin-left: 500px;
 `;
 
 const UlResultado = styled.ul`
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap; /* Permitir que os itens quebrem para a próxima linha */
+  margin-bottom: 200px;
+`;
+
+const SectionContainerInt = styled(SectionContainer)`
+  padding: 90px;
+  text-align: center; /* Centralizar o texto dentro das colunas */
 `;
 
 function Interesse() {
   return (
-    <SectionContainer>
+    <SectionContainerInt>
       <Titulo cor="#C2B990">Interesse</Titulo>
+
       <UlResultado>
         <LiResultado>
           <CardRecomenda
-            titulo="Robótica"
-            subtitulo="Habilidades do Século XXI"
+            titulo="Desenvolvimento de Software"
+            subtitulo="Desenvolvimento de software, web e dispositivos móveis"
             descricao="Construindo uma aplicação com a plataforma Google"
           />
         </LiResultado>
 
         <LiResultado>
           <CardRecomenda
-            titulo="Tecnologia Digitais Educacionais"
-            subtitulo="Uso de ferramentas digitais nas escolas"
+            titulo="Robótica"
+            subtitulo="Implementação de Robótica no desenvolvimento da aprendizagem"
             descricao="Construindo uma aplicação com a plataforma Google"
           />
         </LiResultado>
       </UlResultado>
-    </SectionContainer>
+
+      <UlResultado>
+        <LiResultado>
+          <CardRecomenda
+            titulo="Ciências de Dados"
+            subtitulo="Estudos exploratórios e análises de dados"
+            descricao="Construindo uma aplicação com a plataforma Google"
+          />
+        </LiResultado>
+
+        <LiResultado>
+          <CardRecomenda
+            titulo="Educação e Computação"
+            subtitulo="Uso da computação no mundo educacional"
+            descricao="Construindo uma aplicação com a plataforma Google"
+          />
+        </LiResultado>
+      </UlResultado>
+    </SectionContainerInt>
   );
 }
 
