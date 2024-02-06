@@ -8,7 +8,7 @@ import videoFundo from "/Users/instrutor/JP/ReactJS_book/my-app/src/Assets/video
 const FotoRedonda = styled.div`
   width: 450px;
   height: auto;
-  border-radius: 5%;
+  ccccc
   overflow: hidden;
   margin-right: 56px;
 `;

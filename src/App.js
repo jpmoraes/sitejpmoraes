@@ -1,12 +1,11 @@
-import Logo from "./componentes/Logo";
-import Header from "./componentes/Header";
-import Producao from "./componentes/Section/Producao";
+import Header from "./Componentes/Header";
+import Producao from "./Componentes/Section/Producao";
 import styled from "styled-components";
-import SouEu from "./componentes/Section/SouEu";
-import Interesse from "./componentes/Section/Interesses";
-import Contribua from "./componentes/Section/Contribua";
-import Acoes from "./componentes/Section/Acoes";
-import Footer from "./componentes/Footer";
+import SouEu from "./Componentes/Section/SouEu";
+import Interesse from "./Componentes/Section/Interesses";
+import Contribua from "./Componentes/Section/Contribua";
+import Acoes from "./Componentes/Section/Acoes";
+import Footer from "./Componentes/Footer";
 
 const AppContainer = styled.div`
   width: 100%;
