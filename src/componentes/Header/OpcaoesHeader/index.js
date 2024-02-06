@@ -27,11 +27,12 @@ const Opcoes = styled.ul`
 
 function OpcaoesHeader() {
   const textOpcoes = [
-    "QUEM SOU EU?",
-    "INTERESSES",
-    "PRODUÇÕES",
-    "CONTRIBUA",
-    "CONTATOS",
+    "Quem sou eu?",
+    "Interesses",
+    "Produções",
+     "Ações", 
+     "Contribua",
+   
   ];
 
   return (

@@ -1,14 +1,14 @@
 import { SectionContainer } from "../../Props";
 import { Titulo } from "../../Props";
 import styled from "styled-components";
-import Foto from "../../../imagens/jp.jpg";
-import FotoFundo from "../../../imagens/fundo_sec01.jpg";
-import videoFundo from "/Users/instrutor/JP/ReactJS_book/my-app/src/video/fundo_QSE1.mp4";
+import Foto from "../../../Assets/imagens/jp.jpg";
+import FotoFundo from "../../../Assets/imagens/fundo_sec01.jpg";
+import videoFundo from "/Users/instrutor/JP/ReactJS_book/my-app/src/Assets/video/fundo_QSE1.mp4";
 
 const FotoRedonda = styled.div`
-  width: 450px; /* Ajustei o tamanho da foto */
+  width: 450px;
   height: auto;
-  border-radius: 5%; /* Corrigi o valor para tornar a imagem completamente redonda */
+  border-radius: 5%;
   overflow: hidden;
   margin-right: 56px;
 `;
@@ -23,6 +23,9 @@ const TextP = styled.p`
   line-height: 2;
   width: 50%;
   text-align: justify;
+  background-color: #457d8f;
+  padding: 30px;
+  opacity:0.7;
 `;
 
 const DivOrg = styled.div`
@@ -39,7 +42,7 @@ const DivOrgGeral = styled.div`
 const TituloAlinhado = styled(Titulo)`
   text-align: left;
   margin-left: 36%;
-  margin-top: 300px;
+  margin-top: 500px;
 `;
 
 const ImgFundoContainer = styled.div`
@@ -67,7 +70,7 @@ const VideoFundo = styled.video`
   object-fit: cover;
   width: 100%;
   height: 100%;
-  opacity: 0.4;
+  opacity: 0.6;
 `;
 
 function SouEu() {
@@ -86,20 +89,15 @@ function SouEu() {
                 <Imagem src={Foto} alt="Minha Foto" />
               </FotoRedonda>
               <TextP>
-                Possui graduação em Licenciatura da Computação pelo Instituto
+                Olá, sou João Pedro Moraes (JP Moraes),  Licenciado da Computação pelo Instituto
                 Federal de Educação, Ciência e Tecnologia da Bahia (2017).
                 Pós-graduado em Educação Profissional e Tecnológica pela
                 Faculdade São Luiz (2019). Pós-graduado em Aplicações para
                 desenvolvimento Web (2021) pela faculdade Anhanguera. Mestre em
                 Ciência da Computação pela Universidade Estadual de Feira de
-                Santana (2023). Têm trabalhos publicados, participações em
-                eventos, projetos de ensino e extensão. Atualmente é do grupo de
-                pesquisa RGEAR na área de Robótica Educacional, o qual
-                desenvolve uma metodologia de ensino para mobilizar uma prática
-                multidisciplinar e formativa em ambientes de aprendizagem,
-                reutilizando equipamentos eletroeletrônicos e outros materiais
-                recicláveis aplicados aos conceitos aprendidos no conteúdo
-                curricular.
+                Santana (2023) e aluno especial do Doutorado em Difusão do Conhecimento (UNEB, UFBA e IFBA). 
+                Navegue pelo site e conheça meus interreses de estudos, projetos desenvolvidos e ações 
+                participadas.
               </TextP>
             </DivOrg>
           </DivOrgGeral>

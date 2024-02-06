@@ -5,7 +5,7 @@ import styled from "styled-components";
 import SouEu from "./componentes/Section/SouEu";
 import Interesse from "./componentes/Section/Interesses";
 import Contribua from "./componentes/Section/Contribua";
-import Contatos from "./componentes/Section/Contatos";
+import Acoes from "./componentes/Section/Acoes";
 import Footer from "./componentes/Footer";
 
 const AppContainer = styled.div`
@@ -21,8 +21,8 @@ function App() {
       <SouEu />
       <Interesse />
       <Producao />
+      <Acoes />
       <Contribua />
-      <Contatos />
       <Footer />
     </AppContainer>
   );

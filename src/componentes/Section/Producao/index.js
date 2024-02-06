@@ -1,79 +1,77 @@
-import Input from "../../Input";
+import React, { useState } from "react";
 import styled from "styled-components";
-import { useState } from "react";
 import { projetos } from "./dadosPesquisado";
-import { Titulo } from "../../Props";
-import { Subtitulo } from "../../Props";
-
-
+import { Titulo, Subtitulo } from "../../Props";
+import Input from "../../Input";
 
 const PesquisaContainer = styled.section`
   color: #fff;
   text-align: center;
   padding: 85px 0;
-  height: 270px;
-  width: 100%;
-  height: 30%;
-  background-color: #2F373A;
+  background-color: #2f373a;
   margin-bottom: 2px;
+  height: 1000px;
+  width: 100%;
 `;
 
 const Resultado = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-  cursor: pointer;
-  height: 200px;
-  p {
-    width: 200px;
-  }
-  img {
-    width: 100px;
-  }
+  gap: 20px;
 `;
 
-const liResultado = styled.li`
+const LiResultado = styled.li`
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  width: 400px;
+  height: auto;
 
   &:hover {
     border: 1px solid white;
   }
-`;
 
-const luResultado = styled.ul`
-  display: flex;
-  justify-content: center;
+  p {
+    width: 200px;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  img {
+    width: 300px;
+    height: auto;
+  }
 `;
 
 function Pesquisa() {
-  const [projetoPesquisado, setProjetoDigitado] = useState([]);
+  const [projetoPesquisado, setProjetoDigitado] = useState(projetos);
+
+  const handleSearch = (event) => {
+    const userText = event.target.value;
+    const resultSearch = projetos.filter((livro) =>
+      livro.nome.toLowerCase().includes(userText.toLowerCase())
+    );
+    setProjetoDigitado(resultSearch);
+  };
 
   return (
     <PesquisaContainer>
       <Titulo cor="#fff">Produções</Titulo>
       <Subtitulo>Pesquise projetos do seu interesse</Subtitulo>
-      <Input
-        placeholder="Deixe sua mensagem"
-        onBlur={(event) => {
-          const userText = event.target.value;
-          const resultSearh = projetos.filter((livro) =>
-            livro.nome.includes(userText)
-          );
-          setProjetoDigitado(resultSearh);
-        }}
-      />
-      <luResultado>
-        <Resultado>
-          {projetoPesquisado.map((livro) => (
-            <liResultado>
-              <p>{livro.nome}</p>
-              <img src={livro.src}></img>
-            </liResultado>
-          ))}
-        </Resultado>
-      </luResultado>
+      <Input placeholder="Buscar referências" onBlur={handleSearch} />
+      <br /> <br />
+      <Resultado>
+        {projetoPesquisado.map((livro, index) => (
+          <LiResultado key={index}>
+            <p>{livro.nome}</p>
+            <a href={livro.srcPDF} download={`${livro.nome}.pdf`}>
+              <img src={livro.src} alt={livro.nome} />
+            </a>
+          </LiResultado>
+        ))}
+      </Resultado>
     </PesquisaContainer>
   );
 }

@@ -5,7 +5,7 @@ import Modal from "./modal"; // Importe o componente Modal
 
 const Card = styled.div`
   align-items: center;
-  background-color: #FFE8D1;
+  background-color: #ffe8d1;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   display: flex;
@@ -18,7 +18,7 @@ const Card = styled.div`
 `;
 
 const Botao = styled.button`
-  background-color: #457D8F;
+  background-color: #457d8f;
   color: #fff;
   padding: 10px 0px;
   font-size: 16px;
