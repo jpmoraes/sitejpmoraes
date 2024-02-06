@@ -27,12 +27,17 @@ const SectionContainerInt = styled(SectionContainer)`
   background-color: #748E81;
 `;
 
+const TituloAlinhado = styled(Titulo)`
+  text-align: left;
+  margin-left: 47%;
+`;
+
 function Interesse() {
 
 
   return (
     <SectionContainerInt>
-      <Titulo cor="#fff">Veja os assuntos estudados</Titulo>
+      <TituloAlinhado cor="#fff">Veja os assuntos estudados</TituloAlinhado>
       <Resultado>
       <UlResultado>
         <LiResultado>

@@ -12,6 +12,8 @@ const HeaderContainer = styled.header`
   left: 0;
   right: 0;
   z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos na página */
+  width: 100vw;
+  height: 10vh;
 `;
 
 function Header() {

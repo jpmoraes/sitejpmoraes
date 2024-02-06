@@ -26,12 +26,12 @@ const TextArea = styled.textarea`
 `;
 
 const Label = styled.label`
-  margin-right: 10px;
+  margin-right: 30px;
   font-size: 20px;
 `;
 
 const Botao = styled.button`
-  background-color: #2f373a;
+  background-color: #ffe8d1;
   color: #457d8f;
   padding: 10px 0px;
   font-size: 16px;
@@ -84,6 +84,7 @@ function Contribua() {
         <form onSubmit={handleSubmit}>
           <Label> Nome: </Label>
           <input
+            style={{ marginRight: "5px" }}
             type="text"
             name="nome"
             value={formData.nome}
@@ -102,6 +103,7 @@ function Contribua() {
           <br /> <br />
           <Label> Telefone: </Label>
           <input
+            style={{ marginRight: "30px" }}
             type="tel"
             name="telefone"
             value={formData.telefone}

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Opcao = styled.li`
   list-style: none;
-  min-width: 120px;
+  min-width: 100px;
   font-size: 25px;
   font-family: "Times New Roman", Times, serif;
   display: center;
@@ -11,8 +11,8 @@ const Opcao = styled.li`
   height: 100%;
   padding: 0 20px;
   cursor: pointer;
-  margin-right: 40px;
-  margin-top: 50px;
+  margin-right: 60px;
+  margin-top: 5px;
 
   &:hover {
     list-style: url("../../imagens/seletor.png");
