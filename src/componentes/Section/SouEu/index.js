@@ -8,9 +8,9 @@ import videoFundo from "/Users/instrutor/JP/ReactJS_book/my-app/src/Assets/video
 const FotoRedonda = styled.div`
   width: 450px;
   height: auto;
-  ccccc
   overflow: hidden;
   margin-right: 56px;
+  border-radius: 30px;
 `;
 
 const Imagem = styled.img`
@@ -23,9 +23,11 @@ const TextP = styled.p`
   line-height: 2;
   width: 50%;
   text-align: justify;
-  background-color: #457d8f;
+  background-color: #1961D7;
   padding: 50px;
   opacity: 0.7;
+  height: 77%;
+  margin-top: 3px;
 `;
 
 const DivOrg = styled.div`
@@ -70,7 +72,7 @@ const VideoFundo = styled.video`
   object-fit: cover;
   width: 100%;
   height: 100%;
-  opacity: 0.6;
+  opacity: 0.9;
 `;
 
 function SouEu() {
@@ -82,7 +84,7 @@ function SouEu() {
         </VideoFundo>
         {/*<ImgFundo src={FotoFundo} alt="Minha Foto" />*/}
         <DivOrgGeralOverlay>
-          <TituloAlinhado cor="#E69E67">Quem sou eu?</TituloAlinhado>
+          <TituloAlinhado cor="#E69E67"></TituloAlinhado>
           <DivOrgGeral>
             <DivOrg>
               <FotoRedonda>

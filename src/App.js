@@ -1,21 +1,16 @@
+import React from "react";
+import { Container } from "react-bootstrap";
 import Header from "./Componentes/Header";
 import Producao from "./Componentes/Section/Producao";
-import styled from "styled-components";
 import SouEu from "./Componentes/Section/SouEu";
 import Interesse from "./Componentes/Section/Interesses";
 import Contribua from "./Componentes/Section/Contribua";
 import Acoes from "./Componentes/Section/Acoes";
 import Footer from "./Componentes/Footer";
 
-const AppContainer = styled.div`
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-`;
-
 function App() {
   return (
-    <AppContainer>
+    <Container fluid className="p-0">
       <Header />
       <SouEu />
       <Interesse />
@@ -23,10 +18,8 @@ function App() {
       <Acoes />
       <Contribua />
       <Footer />
-    </AppContainer>
+    </Container>
   );
 }
 
 export default App;
-
-// linear-gradient(180deg, #134298 35%, #2bd6ae 165%)

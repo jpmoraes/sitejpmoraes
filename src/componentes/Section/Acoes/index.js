@@ -3,11 +3,10 @@ import { Titulo } from "../../Props";
 import styled from "styled-components";
 import Carrossel from "./carrossel";
 
-
 const SectionContainerConta = styled(SectionContainer)`
   padding: 60px;
   text-align: center;
-  background-color: #748e81;
+  background-color: #1961d7;
   hight: 600px;
 `;
 

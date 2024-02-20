@@ -5,7 +5,7 @@ import { SectionContainer, Titulo, Subtitulo } from "../../Props";
 const SectionContainerCont = styled(SectionContainer)`
   padding: 60px;
   text-align: center;
-  background-color: #2f373a;
+  background-color: #0c101d;
 `;
 
 const FormularioContainer = styled.div`
@@ -84,7 +84,7 @@ function Contribua() {
         <form onSubmit={handleSubmit}>
           <Label> Nome: </Label>
           <input
-            style={{ marginRight: "5px" }}
+            style={{ marginRight: "5px", fontSize: "20px" }}
             type="text"
             name="nome"
             value={formData.nome}
@@ -94,6 +94,7 @@ function Contribua() {
           <br /> <br />
           <Label> Email:</Label>
           <input
+            style={{ fontSize: "20px" }}
             type="email"
             name="email"
             value={formData.email}
@@ -103,7 +104,7 @@ function Contribua() {
           <br /> <br />
           <Label> Telefone: </Label>
           <input
-            style={{ marginRight: "30px" }}
+            style={{ marginRight: "30px", fontSize: "20px" }}
             type="tel"
             name="telefone"
             value={formData.telefone}
@@ -112,7 +113,7 @@ function Contribua() {
           />
           <br /> <br />
           <label style={{ marginRight: "580px", fontSize: "25px" }}>
-            Descrição:
+            Mensagem:
           </label>
           <TextArea
             name="texto"

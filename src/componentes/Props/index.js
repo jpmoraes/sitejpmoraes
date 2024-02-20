@@ -12,7 +12,7 @@ export const SectionContainer = styled.section`
   text-align: center;
   padding: 85px 0;
   height: 100%;
-  margin-bottom: 2px;
+  margin-bottom: -5px;
   background-color: #7e7e7e;
   padding: 0px;
 `;
